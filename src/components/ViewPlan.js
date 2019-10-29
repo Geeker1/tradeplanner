@@ -51,7 +51,7 @@ const ViewPlan = (props) => {
                 <header>
                     <nav style={style.nav}>
                         <Button primary>
-                            Create New Trading Plan
+                            New Trading Plan
                     </Button>
                     </nav>
                 </header>

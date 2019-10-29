@@ -7,7 +7,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Slabo 27px', serif !important;
-  overflow-x: hidden !important;
+  /* overflow-x: hidden !important; */
 }
 
 code {

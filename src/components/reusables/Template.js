@@ -7,12 +7,14 @@ import { useHistory } from 'react-router-dom'
 const ViewComponent = styled.div`
     @media screen and (min-width: 1024px){
         display: flex;
-        height:100vh;
+        & .children{
+            flex-grow:1 !important;
+            max-height:100vh !important;
+            overflow-y:auto !important;
+        }
     }
 
-    & .content{
-        flex-grow:1;
-    }
+    
 `
 
 
@@ -22,6 +24,7 @@ const Sidebar = styled.div`
     color:#fff;
     display:none;
     flex-direction:column;
+    height:100vh;
 
     .nav-links{
         padding: 15px;
@@ -82,8 +85,9 @@ export const DashBoard = ({children})=>{
                     <small>( Coming Soon )</small>
                 </div>
             </Sidebar>
-
-            { children }
+            <section className="children">
+                { children }
+            </section>
 
         </ViewComponent>
     )
